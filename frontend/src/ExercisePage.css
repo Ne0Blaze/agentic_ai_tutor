@@ -1,0 +1,89 @@
+.exercise-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px);
+    /* Adjust based on header/footer height */
+    padding: 20px;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+.exercise-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.exercise-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.exercise-question {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.exercise-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.option-button {
+    padding: 12px 15px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: left;
+}
+
+.option-button:hover {
+    background-color: #f9f9f9;
+    border-color: #ccc;
+}
+
+.option-button.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.submit-button {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #28a745;
+    /* Green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.progress-text {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}

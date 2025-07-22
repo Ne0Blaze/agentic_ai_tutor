@@ -1,0 +1,18 @@
+g/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.env
+user_data.json
+conversation_history.json
+exercise_logs.json 
+# Python virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Node dependencies
+node_modules/

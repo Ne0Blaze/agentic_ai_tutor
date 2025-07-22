@@ -1,0 +1,154 @@
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    max-width: 800px;
+    /* Max width for the chat interface */
+    margin: 0 auto;
+    /* Center the app */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Optional: add some shadow for better definition */
+    background-color: #fff;
+}
+
+.App-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ff7100;
+    color: white;
+    position: relative;
+    min-height: 50px;
+}
+
+.App-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.new-session-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.new-session-button:hover {
+    background-color: #0056b3;
+}
+
+/* Further styling will be in component-specific CSS files */
+
+/* Add styles for the User ID prompt screen */
+.userId-prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fcfcfc;
+    /* Very light background */
+}
+
+.userId-prompt h1 {
+    margin-bottom: 30px;
+    /* Increased margin */
+    color: #ff7100;
+    font-size: 2.5em;
+    /* Larger title */
+    font-weight: bold;
+}
+
+.userId-prompt input[type="text"] {
+    padding: 12px 15px;
+    /* Increased padding */
+    margin-bottom: 20px;
+    /* Increased margin */
+    width: 320px;
+    /* Slightly wider */
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    /* More rounded */
+    font-size: 1em;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.userId-prompt input[type="text"]:focus {
+    border-color: #ff7100;
+    box-shadow: 0 0 0 2px rgba(255, 113, 0, 0.2);
+    outline: none;
+}
+
+.userId-prompt button {
+    padding: 12px 25px;
+    /* Increased padding */
+    background-color: #ff7100;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    /* More rounded */
+    cursor: pointer;
+    font-size: 1.1em;
+    /* Slightly larger font */
+    font-weight: 500;
+    margin-bottom: 20px;
+    /* Increased margin */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.userId-prompt button:hover {
+    background-color: #e66000;
+    /* Darker shade of brand color for hover */
+}
+
+.userId-prompt p {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    max-width: 320px;
+    /* Align with input width */
+}
+
+
+/* End Session button style (if it exists, or a general button style for header) */
+.App-header button.end-session-button {
+    /* Made more specific if other buttons exist */
+    margin-left: auto;
+    /* Pushes button to the right if header is flex with justify-content: center or flex-start */
+    padding: 8px 15px;
+    font-size: 0.8em;
+    background-color: #fff;
+    /* White button on orange header */
+    color: #ff7100;
+    /* Orange text */
+    border: 1px solid #ff7100;
+    /* Optional: Orange border */
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.App-header button.end-session-button:hover {
+    background-color: #ffe8d6;
+    /* Very light orange for hover */
+    color: #e66000;
+}
+
+/* Styles for Exercise Feedback Container */
+/* ... (rest of styles) ... */

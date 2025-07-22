@@ -1,0 +1,62 @@
+.message {
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 75%;
+    /* Messages don't take full width */
+}
+
+.message-content {
+    padding: 10px 15px;
+    border-radius: 18px;
+    word-wrap: break-word;
+    /* Ensure long words break */
+    line-height: 1.4;
+}
+
+.message-content p {
+    margin: 0;
+}
+
+.user-message {
+    align-self: flex-end;
+    /* Align user messages to the right */
+    flex-direction: row-reverse;
+    /* Moves timestamp to the left for user */
+}
+
+.user-message .message-content {
+    background-color: #007bff;
+    /* Blue for user messages */
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+
+.bot-message {
+    align-self: flex-start;
+    /* Align bot messages to the left */
+}
+
+.bot-message .message-content {
+    background-color: #e9ecef;
+    /* Light grey for bot messages */
+    color: #333;
+    border-bottom-left-radius: 5px;
+}
+
+.message-timestamp {
+    font-size: 0.75em;
+    color: #888;
+    margin: 0 8px;
+    align-self: flex-end;
+    /* Align timestamp to the bottom of the message bubble */
+    padding-bottom: 2px;
+}
+
+.typing-indicator {
+    align-self: flex-start;
+    padding: 10px 15px;
+    background-color: #e9ecef;
+    border-radius: 18px;
+    border-bottom-left-radius: 5px;
+    color: #555;
+}

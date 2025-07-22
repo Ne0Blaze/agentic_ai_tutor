@@ -1,0 +1,45 @@
+.chat-window {
+    flex-grow: 1;
+    /* Takes up available space */
+    overflow-y: auto;
+    /* Allows scrolling for messages */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Spacing between messages */
+    background-color: #f9f9f9;
+    /* Light background for chat area */
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.typing-indicator span {
+    display: inline-block;
+    animation: bounce 1s infinite;
+    margin: 0 2px;
+    background-color: #ccc;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
